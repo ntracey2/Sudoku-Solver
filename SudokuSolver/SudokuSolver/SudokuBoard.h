@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 #include <array>
 const int kBoardSize = 9;
 class SudokuBoard {
@@ -9,4 +10,5 @@ class SudokuBoard {
 	public:
 		SudokuBoard(std::string board);
 		std::array<std::array<char, kBoardSize>, kBoardSize> get_board_array();
+		friend std::ostream& operator<<(std::ostream& os, const SudokuBoard& board);
 };

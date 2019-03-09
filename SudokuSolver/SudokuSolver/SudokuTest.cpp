@@ -14,3 +14,7 @@ TEST_CASE("Test GetMatrix") {
 		REQUIRE(testBoard.get_board_array()[8][5] == '6');
 	}
 }
+
+TEST_CASE("Test printing") {
+	std::cout << testBoard;
+}
