@@ -151,14 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="SudokuBoard.cpp" />
     <ClCompile Include="SudokuSolver.cpp" />
     <ClCompile Include="SudokuTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="SudokuBoard.h" />
     <ClInclude Include="catch.h" />
     <ClInclude Include="SudokuSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="PuzzleInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
