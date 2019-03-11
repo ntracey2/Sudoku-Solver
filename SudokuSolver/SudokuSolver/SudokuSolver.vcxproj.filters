@@ -30,6 +30,9 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="catch.h">
@@ -44,7 +47,7 @@
     <ClInclude Include="Constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
+    <ClInclude Include="FileIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

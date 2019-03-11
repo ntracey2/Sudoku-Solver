@@ -1,7 +1,5 @@
 #pragma once
 
-
-
 #include <string>
 #include <iostream>
 #include <array>
@@ -20,4 +18,3 @@ class SudokuBoard {
 		friend std::ostream& operator<<(std::ostream& os, const SudokuBoard& board);
 		friend std::istream& operator>>(std::istream &in, const SudokuBoard &c);
 };
-

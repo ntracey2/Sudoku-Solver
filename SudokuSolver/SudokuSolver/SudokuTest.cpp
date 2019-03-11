@@ -1,4 +1,4 @@
-//#define CATCH_CONFIG_MAIN
+#define CATCH_CONFIG_MAIN
 
 #include "catch.h"
 #include "SudokuBoard.h"
@@ -26,6 +26,6 @@ TEST_CASE("Test printing") {
 
 TEST_CASE("Test solution") {
 	SudokuBoard solved(kSolvedExampleBoard1);
-	//std::cout << solved << std::endl;
 	REQUIRE(solved.get_board_array() == GetSolvedBoard(hardBoard).get_board_array());
 }
+
