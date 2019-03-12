@@ -30,8 +30,6 @@ std::array<std::array<char, kBoardSize>, kBoardSize> SudokuBoard::get_board_arra
 	return board_array;
 }
 
-
-
 void SudokuBoard::set_board_array(std::array<std::array<char, kBoardSize>, kBoardSize> board) {
 	board_array = board;
 }

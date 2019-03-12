@@ -55,5 +55,8 @@
     <Text Include="PuzzleInput.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="TestInput.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

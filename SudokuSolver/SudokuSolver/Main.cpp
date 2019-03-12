@@ -9,16 +9,7 @@
 #include <vector>
 #include <sstream>
 
-std::string GetBoardAsString(SudokuBoard board) {
-	std::string board_string;
-	std::array<std::array<char, 9>, 9> board_array = board.get_board_array();
-	for (int i = 0; i < board_array.size(); i++) {
-		for (int j = 0; j < board_array[0].size(); j++) {
-			board_string.push_back(board_array[i][j]);
-		}
-	}
-	return board_string;
-}
+
 
 int main() {
 	std::string input;

@@ -42,6 +42,8 @@ std::array<int, 3> GetEmptyPoint(std::array<std::array<char, kBoardSize>, kBoard
 				point[0] = 1; //point found
 				point[1] = j;
 				point[2] = i;
+				return point;
+				//std::cout << i << j;
 			}
 		}
 	}
@@ -70,3 +72,13 @@ bool CanPlaceDigit(std::array<std::array<char, kBoardSize>, kBoardSize> board, c
 	return true;
 }
 
+std::string GetBoardAsString(SudokuBoard board) {
+	std::string board_string;
+	std::array<std::array<char, 9>, 9> board_array = board.get_board_array();
+	for (int i = 0; i < board_array.size(); i++) {
+		for (int j = 0; j < board_array[0].size(); j++) {
+			board_string.push_back(board_array[i][j]);
+		}
+	}
+	return board_string;
+}

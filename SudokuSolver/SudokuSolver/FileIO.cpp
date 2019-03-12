@@ -31,6 +31,7 @@ std::vector<std::string> FileRead(std::string file_name) {
 void FileWrite(std::string file_name, std::vector<std::string> solutions) {
 	std::ofstream file;
 	file.open(file_name);
+	file << "#spf1.0" << std::endl;
 	for (std::string s : solutions) {
 		file << s << std::endl;
 	}
