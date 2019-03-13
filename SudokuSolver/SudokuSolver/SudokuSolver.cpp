@@ -1,6 +1,3 @@
-// SudokuSolver.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include "SudokuSolver.h"
 #include "SudokuBoard.h"
 #include <iostream>
@@ -43,7 +40,6 @@ std::array<int, 3> GetEmptyPoint(std::array<std::array<char, kBoardSize>, kBoard
 				point[1] = j;
 				point[2] = i;
 				return point;
-				//std::cout << i << j;
 			}
 		}
 	}

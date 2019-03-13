@@ -21,10 +21,6 @@ TEST_CASE("Test GetMatrix") {
 	}
 }
 
-TEST_CASE("Test printing") {
-	std::cout << testBoard;
-}
-
 TEST_CASE("Test GetEmptyPoint") {
 	REQUIRE(GetEmptyPoint(hardBoard.get_board_array())[1] == 1);
 	REQUIRE(GetEmptyPoint(hardBoard.get_board_array())[2] == 0);
